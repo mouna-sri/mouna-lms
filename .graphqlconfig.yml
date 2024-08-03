@@ -1,0 +1,16 @@
+projects:
+  lmsprod-prod:
+    schemaPath: src/graphql/schema.json
+    includes:
+      - src/graphql/**/*.ts
+    excludes:
+      - ./amplify/**
+      - src/API.ts
+    extensions:
+      amplify:
+        codeGenTarget: typescript
+        generatedFileName: src/API.ts
+        docsFilePath: src/graphql
+        region: ap-south-1
+        apiId: ka52nrvd5ngkbd3on77jzwsvvq
+        maxDepth: 2
